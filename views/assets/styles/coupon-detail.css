@@ -1,0 +1,100 @@
+.coupon-first-image{
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 100%;
+}
+.coupon-normal-image{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+span{
+    font-weight: 700;
+}
+.container{
+    padding-bottom: 30px;
+}
+
+
+#response {
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 80px var(--page-padding);
+    background: url(../images/homepage-background3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    color: #fff;
+}
+
+#response h1 {
+    z-index: 1;
+    color: #fff !important;
+}
+
+#response .hr {
+    z-index: 1;
+    border: 0;
+    height: 2px;
+    width: 20%;
+    background-color: #DE6622;
+    margin-bottom: 10px;
+}
+
+#response h5 {
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#response .response-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.response-content-item {
+    width: 280px;
+    background-color: #fff;
+    color: #000;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.response-content-item .rating {
+    color: #DE6622;
+}
+
+.response-content-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.response-content-item p {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+

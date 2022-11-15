@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/style.css">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/tableList.css">
+
+<body>
+   <div id="container">
+      <header class="flex-col">
+         <div id="logo-container" class="flex-col">
+            <div id="logo">
+               <img class="icon" src="../assets/images/restaurant-logo.png" alt="">
+               <h1>Chả cá đế vương</h1>
+            </div>
+            <hr>
+         </div>
+         <ul id="navbar">
+            <li class="active">
+               <i class="fa-solid fa-table-list"></i> Monitoring
+            </li>
+         </ul>
+      </header>
+      <div id="main">
+         <div id="status">
+            <div id="notify">
+               <i class="fa-regular fa-bell fa-xl"></i>
+            </div>
+            <div id="account">
+               <span id="name">Thuc vip pro py</span>
+               <img class="icon" src="../assets/images/avatar.jpg" alt="avatar">
+            </div>
+         </div>
+         <div id="content">
+            <ul id="state-type">
+               <li id="all" class="active">All</li>
+            </ul>
+            <div id="table-info">
+               <div id="attributies">
+                  <span>Table</span>
+                  <span>Type</span>
+                  <span>Dine in</span>
+                  <span>State</span>
+               </div>
+               <div id="table-list">
+                  <div id="sample" class="table-tab" style="display: none;">
+                     <div class="flex-row">
+                        <img class="icon" src="../assets/images/dining-table.png" alt="">
+                        <span class="table-name">Table 2</span>
+                     </div>
+                     <div class="type">
+                        <span class="group">4</span>
+                        <i class="fa-solid fa-user-group"></i>
+                     </div>
+                     <div class="dineIn">
+                        4:05pm
+                     </div>
+                     <div class="state">
+                        <i class="fa-solid fa-circle fa-sm"></i>
+                        <span class="statestr">ordered</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="../assets/clerkJS/tableList.js"></script>
+</body>
+
+</html>

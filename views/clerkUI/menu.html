@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/style.css">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/menu.css">
+
+</head>
+
+<body>
+   <div class="top-header">
+      <div id="table-header">
+         <div id="table">
+            <img class="icon" src="../assets/images/dining-table.png" alt="dinnig table">
+            <div id="table-info">
+               <div class="flex-justify">
+                  <span id="tableName"></span>
+                  <div id="group" class="type">
+                     <i class="fa-solid fa-user-group"></i>
+                  </div>
+               </div>
+               <div class="dineIn">
+                  <span id="dinein"></span>
+               </div>
+            </div>
+         </div>
+         <div class="state">
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <span id="state"></span>
+         </div>
+      </div>
+      <input type="text" id="searchbar" placeholder="Search..">
+      <div class="cart-container">
+         <button class="btnhidden" id="penBtn"><i class="fa-solid fa-pen fa-2xl cam"></i></button>
+         <button class="btnhidden" id="cartBtn"><i class="fa-solid fa-cart-shopping fa-2xl cam"></i></button>
+      </div>
+      <button class="btnhidden" id="done">Done</button>
+   </div>
+   <div id="navbar">
+      <a id="all" class="active" href="#">All</a>
+   </div>
+   <div id="modaldiv">
+      <div id="cartModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h2 class="cam">Order List</h2>
+               <button class="btnhidden close"><i class="fa-solid fa-xmark fa-xl cam"></i></button>
+            </div>
+            <div id="cartmain">
+               <div id="samplemodal" class="foodmodal" style="display: none;">
+                  <div class="flex-row">
+                     <img class="food-img-modal" src="" alt="">
+                     <div>
+                        <p class="name">Nem rán Hà Nội</p>
+                        <p class="cost">đ 99.000</p>
+                     </div>
+                  </div>
+                  <div class="order-modal">
+                     <button class="btnhidden minus-food"><i class="fa-solid fa-square-minus fa-2xl"></i></button>
+                     <p class="ordernum">0</p>
+                     <button class="btnhidden plus-food"><i class="fa-solid fa-square-plus fa-2xl cam"></i></button>
+                  </div>
+               </div>
+               <div id="choose-list">
+               </div>
+            </div>
+            <div class="fixed-footer buttons">
+               <button id="prepare">Prepare All</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="penModal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h2 class="cam">Special requirement</h2>
+               <button class="btnhidden close"><i class="fa-solid fa-xmark fa-xl cam"></i></button>
+            </div>
+            <div class="sq">
+               <textarea name="specreq" id="specreq" cols="50" rows="10"></textarea>
+            </div>
+            <div class="fixed-footer buttons">
+               <button id="addsreq">Add</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="alert" class="modal">
+         <div class="modal-content center">
+            <p class="alert"></p>
+         </div>
+      </div>
+   </div>
+   <div id="main">
+      <div id="menu">
+         <div id="sample" class="foodorder" style="display: none;">
+            <img class="food-img">
+            <div class="p2">
+               <div class="food-info">
+                  <p class="name">name</p>
+                  <p class="cost">cost</p>
+               </div>
+               <div class="order">
+                  <button class="btnhidden minus-food" style="display: none;"><i
+                        class="fa-solid fa-square-minus fa-2xl"></i></button>
+                  <p class="ordernum" style="display: none;">0</p>
+                  <button class="btnhidden plus-food"><i class="fa-solid fa-square-plus fa-2xl cam"></i></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="cartsummary">
+      <p>
+         <i class="fa-solid fa-cart-shopping fa-2xl"></i> đ
+         <span id="totalcost">0</span>
+      </p>
+      <span>Vui lòng chọn món ăn</span>
+   </div>
+   <script src="../assets/clerkJS/utilis.js"></script>
+   <script src="../assets/clerkJS/menu.js"></script>
+</body>
+
+</html>

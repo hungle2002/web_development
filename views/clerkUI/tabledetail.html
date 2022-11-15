@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/style.css">
+   <link rel="stylesheet" href="../assets/styles/clerkStyles/tabledetail.css">
+
+<body>
+   <div id="container">
+      <header class="flex-col">
+         <div id="logo-container" class="flex-col">
+            <div id="logo">
+               <img class="icon" src="../assets/images/restaurant-logo.png" alt="logo">
+               <h1>Chả cá đế vương</h1>
+            </div>
+            <hr>
+         </div>
+         <ul id="navbar">
+            <li class="active">
+               <i class="fa-solid fa-table-list"></i> Monitoring
+            </li>
+         </ul>
+      </header>
+      <div id="main">
+         <div id="status">
+            <div id="notify">
+               <i class="fa-regular fa-bell fa-xl"></i>
+            </div>
+            <div id="account">
+               <span id="name">Thuc vip pro py</span>
+               <img class="icon" src="../assets/images/avatar.jpg" alt="avatar">
+            </div>
+         </div>
+         <div id="content">
+            <div class="flex-header">
+               <div id="table-header">
+                  <div id="table">
+                     <img class="icon" src="../assets/images/dining-table.png" alt="">
+                     <div id="table-info">
+                        <div class="flex-justify">
+                           <span id="tableName"></span>
+                           <div id="group" class="type">
+                              <i class="fa-solid fa-user-group"></i>
+                           </div>
+                        </div>
+                        <div class="dineIn">
+                           <span id="dinein"></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="state">
+                     <i class="fa-solid fa-circle fa-sm"></i>
+                     <span id="state"></span>
+                  </div>
+               </div>
+               <div id="buttons">
+                  <button id="confirmPaid">Confirm Paid</button>
+                  <button id="goimon">Goi Mon</button>
+                  <button id="available" style="display: none;">Available</button>
+               </div>
+            </div>
+            <div>
+               <div id="types">
+                  <span id="foodTag" class="cam">Food</span>
+                  <span id="billTag">Bill</span>
+               </div>
+               <div id="foodlist" class="flex-container">
+                  <div id="sample" class="popup">
+                     <div class="food">
+                        <div class="food-info">
+                           <img class="icon" src="" alt="">
+                           <div class="info">
+                              <span class="foodName">Table 2</span>
+                              <div class="cost"></div>
+                           </div>
+                        </div>
+                        <div class="foodState">
+                           <i class="fa-solid fa-fire-burner fa-lg excute"></i>
+                           <i class="fa-solid fa-bell-concierge fa-lg serve"></i>
+                        </div>
+                     </div>
+                     <div class="popuptext">
+                        <button class="mark btnhidden"><i class="fa-solid fa-circle-check"></i> Mark as Served</button>
+                        <button class="cancle btnhidden"><i class="fa-solid fa-trash-can"></i> Cancle Order</button>
+                     </div>
+                  </div>
+               </div>
+               <div id="bill" class="container" style="display: none;">
+                  <table id="billlist">
+                     <tbody></tbody>
+                  </table>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>Total:</td>
+                           <td id="allTotal"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="../assets/clerkJS/utilis.js"></script>
+   <script src="../assets/clerkJS/tabledetail.js"></script>
+</body>
+
+</html>
